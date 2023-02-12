@@ -2,3 +2,23 @@ body {
   font-family: "lora", serif;
   font-family: "ubuntu", sans-serif;
 }
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+nav a {
+}
+
+nav a:hover {
+}
