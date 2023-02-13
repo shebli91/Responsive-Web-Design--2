@@ -1,16 +1,45 @@
 body {
   margin: 0;
   font-family: "ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* ==============
+Typography
+============== */
+
+h1,
+h2,
+h3 {
+  font-family: "lora", serif;
+  font-weight: 400;
+  color: #143774;
 }
 
 h1 {
-  font-family: "lora", serif;
-  font-weight: 400;
-  color: #143773;
   font-size: 2rem;
   margin: 0;
 }
 
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* h1 subtitle  */
 .subtitle {
   font-weight: bold;
   color: #1792d2;
@@ -18,31 +47,66 @@ h1 {
   margin: 0;
 }
 
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+/* ============
+Layout
+============ */
+
 .container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 header {
   background: #f8f8f8;
   padding: 2em 0;
+  text-align: center;
 }
 
-@media (max-width: 675px) {
-  .container-nav {
-    flex-direction: column;
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
   }
 
-  header {
-    text-align: center;
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
   }
 }
+
+/* ===========
+Navigation
+=========== */
 
 nav ul {
   list-style: none;
